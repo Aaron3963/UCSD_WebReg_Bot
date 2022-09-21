@@ -1,5 +1,5 @@
 # UCSD WebReg Bot🤖
-This is an automated web program for UCSD's online course enrollment system (webreg).
+This is an automated web program for UCSD's online course enrollment system ([webreg](https://act.ucsd.edu/webreg2)).
 
 ## What can it do
 * Constantly refreshing webreg to check if there are new seats avaliable
