@@ -8,7 +8,7 @@ This is an automated web program for UCSD's online course enrollment system (web
 * Go backwards to the "go" page to ensure the page is refreshed (developing)
 
 ## Prerequisities
-* Python 3.x
+* [Python 3.x](https://www.python.org/downloads/)
 * Selenium
 ```pip install selenium```
 * openpyxl
