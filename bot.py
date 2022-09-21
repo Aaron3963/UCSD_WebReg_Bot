@@ -41,7 +41,7 @@ password.send_keys(PASSWORD)
 
 wd.find_element(By.XPATH,'//*[@id="login"]/button').click()
 
-sleep(10)
+sleep(15)
 
 #Go page
 termSelect = Select(wd.find_element(By.ID,'startpage-select-term'))
