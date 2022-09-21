@@ -17,7 +17,7 @@ This is an automated web program for UCSD's online course enrollment system (web
 ## How does it work
 1. Put your UCSD username & password in B1 and B2 cell inside ```config.xlsx```
 2. Check your webreg and record all courses you like to enroll\
-   Format:\
+   Format:
    
 |   |   |   |   |   |   |
 |---|---|---|---|---|---|
