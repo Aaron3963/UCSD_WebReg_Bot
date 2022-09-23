@@ -7,9 +7,11 @@ This program is still in its experimental stage\
 
 ## What can it do
 * Constantly refreshing webreg to check if there are new seats avaliable
-* Automatically enroll the class if there is vacancy
-* Timer for specific duration (developing)
 * Go backwards to the "go" page to ensure the page is refreshed
+* Automatically enroll the class if there is vacancy
+* Enroll multiple courses
+* Timer for specific duration (developing)
+
 
 ## Prerequisities
 * [Python 3.x](https://www.python.org/downloads/)
