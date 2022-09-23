@@ -41,5 +41,5 @@ This program is still in its experimental stage\
 3. Run the bot.py file
 4. Prepare to authorize SSO login
 5. Leave the program running
-6. When the bot finds a vacancy for a class, it will enroll automatically
+6. When the bot finds a vacancy for a class, it will enroll automatically and an email notification will be send to your email.
 7. When all classes are enrolled, the program exists itself
