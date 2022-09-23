@@ -18,7 +18,7 @@ This program is still in its experimental stage\
 * openpyxl
 ```pip install openyxl```
 * Web Driver (Best to use [Chrome](https://chromedriver.storage.googleapis.com/index.html))\
-  Notice to download the correspond driver version that is the same as your browser version.
+  Notice to download the correspond driver version that is the same as your browser version and replace the existing one.
 
 ## How does it work
 1. Put your UCSD username & password in B1 and B2 cell inside ```config.xlsx```
