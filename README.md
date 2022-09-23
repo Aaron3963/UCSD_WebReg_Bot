@@ -13,7 +13,7 @@ This is an automated web program for UCSD's online course enrollment system ([we
 ```pip install selenium```
 * openpyxl
 ```pip install openyxl```
-* Web Driver (Best to use [Chrome](https://chromedriver.storage.googleapis.com/index.html))
+* Web Driver (Best to use [Chrome](https://chromedriver.storage.googleapis.com/index.html))\
   Notice to download the correspond driver version that is the same as your browser version.
 
 ## How does it work
