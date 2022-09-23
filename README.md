@@ -5,7 +5,7 @@ This is an automated web program for UCSD's online course enrollment system ([we
 * Constantly refreshing webreg to check if there are new seats avaliable
 * Automatically enroll the class if there is vacancy
 * Timer for specific duration (developing)
-* Go backwards to the "go" page to ensure the page is refreshed (developing)
+* Go backwards to the "go" page to ensure the page is refreshed
 
 ## Prerequisities
 * [Python 3.x](https://www.python.org/downloads/)
@@ -13,6 +13,8 @@ This is an automated web program for UCSD's online course enrollment system ([we
 ```pip install selenium```
 * openpyxl
 ```pip install openyxl```
+* Web Driver (Best to use [Chrome](https://chromedriver.storage.googleapis.com/index.html))
+  Notice to download the correspond driver version that is the same as your browser version.
 
 ## How does it work
 1. Put your UCSD username & password in B1 and B2 cell inside ```config.xlsx```
@@ -33,4 +35,5 @@ This is an automated web program for UCSD's online course enrollment system ([we
 3. Run the bot.py file
 4. Prepare to authorize SSO login
 5. Leave the program running
-6. When the bot finds a vacancy, it will enroll and the program exists
+6. When the bot finds a vacancy for a class, it will enroll automatically
+7. When all classes are enrolled, the program exists itself
