@@ -24,9 +24,12 @@ This program is still in its experimental stage\
 
 ## How does it work
 1. Put your UCSD username & password in B1 and B2 cell inside ```config.xlsx```
-2. Check your webreg and record all courses you like to enroll\
-   Format as same as below
+3. Select the quarter, format as same as below
    <img src="img/Quarter.png"  width="70%">
+
+2. Check your webreg and record all courses you like to enroll\
+
+
    
 |   |   |   |   |   |   |
 |---|---|---|---|---|---|
