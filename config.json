@@ -1,0 +1,9 @@
+{
+    "Username":"Enter Username Here",
+    "Password": "Enter Password Here",
+    "Quarter": "Enter Quarter Here",
+    "Classes":{
+        "MMW14": ["86968","86969"],
+        "CSE15L": ["90014","90015","90016"]
+    }
+}

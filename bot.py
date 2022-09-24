@@ -1,39 +1,30 @@
-from ast import Try, While
+import json
 from time import sleep, time
-from xmlrpc.client import Boolean
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select,WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 
-import openpyxl
-bk=openpyxl.load_workbook('config.xlsx')
-sheet=bk.active
 
-maxRow=sheet.max_row
-maxCol=sheet.max_column
+with open('config.json', encoding='utf-8') as file:
+    config = json.load(file)
+    USERNAME = config.get("Username")
+    PASSWORD = config.get("Password")
+    QUARTER = config.get("Quarter")
+    dict = config.get("Classes")
 
-USERNAME = sheet.cell(1,2).value
-PASSWORD = sheet.cell(2,2).value
-QUARTER = sheet.cell(3,2).value
+    courseChecklist = {}
+    for key in dict.keys():
+        courseChecklist[key] = False
 
-dict = {}
-courseChecklist = {}
-for i in range(3,maxRow+1):
-    list = []
-    for j in range(2,maxCol+1):
-        cell = str(sheet.cell(i,j).value)
-        if cell == 'None':
-            continue
-        if len(cell) < 6:
-            for numZero in range (0,6-len(cell)):
-                cell = '0'+cell
-        list.append(cell)
-    dict[sheet.cell(i,1).value] = list
-    courseChecklist [sheet.cell(i,1).value] = False
-print(dict)
+    for value in dict.values():
+        i = 0
+        for sessionID in value:
+            value[i] = sessionID.rjust(6,'0') 
+            i += 1
 
+    print(dict)
+    print(courseChecklist)
 
 wd = webdriver.Chrome(service= Service(r'./chromedriver.exe'))
 wd.implicitly_wait(10)
@@ -99,7 +90,7 @@ def check(wd,course,id):
         return True
 
 def enroll(wd,course,id,checklist):
-    sectionEnrollID = 'search-enroll-id-'+str(id)
+    sectionEnrollID = 'search-enroll-id-'+id
 
     wd.find_element(By.ID,sectionEnrollID).click()
 
