@@ -6,7 +6,7 @@ This program is still in its experimental stage\
 ⚠️USE AT YOUR OWN RISK⚠️
 
 ## What can it do
-* Constantly refreshing webreg to check if there are new seats avaliable
+* Constantly refreshing webreg to check if there are new seats available
 * Go backwards to the "go" page to ensure the page is refreshed
 * Automatically enroll the class if there is vacancy
 * Enroll multiple courses
@@ -23,7 +23,7 @@ This program is still in its experimental stage\
 ## How does it work
 1. Open ```config.json```, enter your UCSD username & password
 
-2. Enter the quarter, formated as same as below
+2. Enter the quarter, formatted as same as below
    <img src="img/Quarter.png"  width="70%">
 
 3. Check your webreg and record all courses you like to enroll followed by session IDs
