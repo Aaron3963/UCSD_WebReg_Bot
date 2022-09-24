@@ -24,10 +24,11 @@ This program is still in its experimental stage\
 
 ## How does it work
 1. Put your UCSD username & password in B1 and B2 cell inside ```config.xlsx```
-3. Select the quarter, format as same as below
+
+2. Select the quarter, format as same as below
    <img src="img/Quarter.png"  width="70%">
 
-2. Check your webreg and record all courses you like to enroll\
+3. Check your webreg and record all courses you like to enroll\
 
 
    
@@ -42,8 +43,8 @@ This program is still in its experimental stage\
 > There is no space between the letters and numbers of courses\
 > No need to add 0 before numbers as it is a hard thing to do in xlsx files
 
-3. Run the bot.py file
-4. Prepare to authorize SSO login
-5. Leave the program running
-6. When the bot finds a vacancy for a class, it will enroll automatically and an email notification will be send to your email.
-7. When all classes are enrolled, the program exists itself
+4. Run the bot.py file
+5. Prepare to authorize SSO login
+6. Leave the program running
+7. When the bot finds a vacancy for a class, it will enroll automatically and an email notification will be send to your email.
+8. When all classes are enrolled, the program exists itself
