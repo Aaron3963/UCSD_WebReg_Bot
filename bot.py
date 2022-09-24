@@ -16,6 +16,7 @@ maxCol=sheet.max_column
 
 USERNAME = sheet.cell(1,2).value
 PASSWORD = sheet.cell(2,2).value
+QUARTER = sheet.cell(3,2).value
 
 dict = {}
 courseChecklist = {}
@@ -49,10 +50,12 @@ wd.find_element(By.XPATH,'//*[@id="login"]/button').click()
 sleep(15)
 
 #Go page
-def goPage(wd):
+def goPage(wd,quarter):
     wd.get('https://act.ucsd.edu/webreg2')
     termSelect = Select(wd.find_element(By.ID,'startpage-select-term'))
-    termSelect.select_by_visible_text('Fall Quarter 2022')
+    
+    # TODO
+    termSelect.select_by_visible_text(quarter)
 
     wd.find_element(By.ID,'startpage-button-go').click()
 
@@ -161,13 +164,13 @@ def main():
                 passedTime = time()
     return False
 
-goPage(wd)
+goPage(wd,QUARTER)
 main()
 
 while not checkCourseList(courseChecklist):
     print(courseChecklist)
     print("Refresh Page")
-    goPage(wd)
+    goPage(wd,QUARTER)
     main()
 
 wd.quit()
