@@ -23,26 +23,17 @@ This program is still in its experimental stage\
   Notice to download the correspond driver version that is the same as your browser version and replace the existing one.
 
 ## How does it work
-1. Put your UCSD username & password in B1 and B2 cell inside ```config.xlsx```
+1. Open ```config.json```, enter your UCSD username & password
 
-2. Enter the quarter in the B3 cell, formated as same as below
+2. Enter the quarter, formated as same as below
    <img src="img/Quarter.png"  width="70%">
 
-3. Check your webreg and record all courses you like to enroll\
+3. Check your webreg and record all courses you like to enroll followed by session IDs
 
-
-   
-|   |   |   |   |   |   |
-|---|---|---|---|---|---|
-| Username | Name Here | --- | --- | --- | --- |
-| Password | PW Here | --- | --- | --- | --- |
-| Quarter | Quarter & Year | --- | --- | --- | --- |
-| MMW16 | 12345 | 12346 | 12347 | 12348 | ...... |
-| MMW17 | 024680 | 024681 | 024682 | 024683 | ...... |
 
 > **Notice**\
 > There is no space between the letters and numbers of courses\
-> No need to add 0 before numbers as it is a hard thing to do in xlsx files
+> The session ID should be a string (inside "")
 
 4. Run the bot.py file
 5. Prepare to authorize SSO login
