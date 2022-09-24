@@ -17,8 +17,6 @@ This program is still in its experimental stage\
 * [Python 3.x](https://www.python.org/downloads/)
 * Selenium
 ```pip install selenium```
-* openpyxl
-```pip install openpyxl```
 * Web Driver (Best to use [Chrome](https://chromedriver.storage.googleapis.com/index.html))\
   Notice to download the correspond driver version that is the same as your browser version and replace the existing one.
 
